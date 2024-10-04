@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwindstyle.css" />
+  </head>
+  <body>
+    <div
+      class="container flex flex-col items-center justify-center min-h-screen"
+    >
+      <h1 class="text-4xl mt-4">SIMPLE CALCULATOR</h1>
+      <div
+        class="container shadow-lg w-[70%] h-80 bg-blue-400 flex flex-col items-center mt-10 mb-5 px-8 py-8"
+      >
+        <input
+          type="number"
+          id="input-1"
+          placeholder="Input number"
+          class="border border-black block mb-5 p-2"
+        />
+
+        <input type="text" id="operator" class="w-10 px-3" />
+
+        <input
+          type="number"
+          id="input-2"
+          placeholder="Input number"
+          class="border border-black block my-4 mb-5 p-2"
+        />
+
+        <button id="calc" class="bg-white w-10">=</button>
+
+        <button id="result" class="text-2xl mt-5 bg-white px-3">0</button>
+        <button id="Refresh" class="bg-white w-14 px-3 my-4 self-end">
+          Refresh
+        </button>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
